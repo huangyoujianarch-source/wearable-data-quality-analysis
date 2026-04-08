@@ -1,7 +1,7 @@
 # 📊 Data Quality Analysis of Healthcare Wearable Devices
 
 ## 🧩 Project Overview
-This project evaluates the data quality of a healthcare wearable device to identify issues affecting the reliability of recorded health metrics and support improvements in device performance.
+This project analyzes data quality issues in a healthcare wearable device, identifying key reliability challenges and providing actionable insights to improve device performance and user experience.
 
 ---
 
@@ -29,17 +29,17 @@ The dataset contains data quality measurements across multiple health metrics, i
 ---
 
 ## ⚙️ Methodology
-1. Data cleaning and preprocessing  
-2. Definition of key metric: `issue_rate`  
-3. Exploratory data analysis (EDA)  
-4. Time-series analysis  
-5. Dashboard development in Tableau  
+- Cleaned and processed data using Python (pandas)  
+- Defined key metric `issue_rate` to measure data quality  
+- Conducted exploratory and time-series analysis  
+- Built interactive dashboards in Tableau  
+- Collaborated with stakeholders to align analysis with business needs  
 
 ---
 
 ## 📊 Dashboard Design
 
-To support both business monitoring and user-level insights, three dashboards were developed:
+These dashboards were designed to support both operational monitoring and user-level insights.
 
 ### 1. Overall Device Monitoring Dashboard
 - Tracks overall data quality performance across all metrics  
@@ -87,3 +87,10 @@ To support both business monitoring and user-level insights, three dashboards we
 
 ## 💡 Key Takeaway
 This project demonstrates how data analysis can identify quality issues in healthcare devices and support data-driven product improvements.
+
+---
+
+## 📈 What I Learned
+- Importance of data quality in real-world healthcare applications  
+- How to define meaningful metrics (e.g., issue_rate)  
+- Translating analysis into actionable business recommendations 
