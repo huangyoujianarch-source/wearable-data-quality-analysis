@@ -55,6 +55,8 @@ The dataset contains data quality measurements across multiple health metrics, i
 
 ## 📊 Dashboard Preview
 ![Dashboard](Dashboard1.jpg)
+![Dashboard](Dashboard2.jpg)
+![Dashboard](Dashboard3.jpg)
 
 ---
 
