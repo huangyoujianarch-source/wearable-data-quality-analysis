@@ -37,6 +37,26 @@ The dataset contains data quality measurements across multiple health metrics, i
 
 ---
 
+## 📊 Dashboard Design
+
+To support both business monitoring and user-level insights, three dashboards were developed:
+
+### 1. Overall Device Monitoring Dashboard
+- Tracks overall data quality performance across all metrics  
+- Highlights issue rates and trends over time  
+- Helps stakeholders quickly identify system-level problems  
+
+### 2. User-Level Monitoring Dashboard
+- Provides an overview of data quality for individual users  
+- Allows users to understand their overall recording performance  
+
+### 3. Metric-Specific Monitoring Dashboard
+- Focuses on specific health metrics (e.g., heart rate, movement, sleep)  
+- Enables detailed investigation of data quality issues  
+- Helps identify patterns and potential causes of anomalies  
+
+---
+
 ## 🔍 Key Insights
 - Most metrics show high reliability with near-zero issue rates  
 - Movement-related metrics have higher issue rates, likely due to sensor or activity factors  
@@ -54,8 +74,13 @@ The dataset contains data quality measurements across multiple health metrics, i
 ---
 
 ## 📊 Dashboard Preview
+### Overall Device Monitoring
 ![Dashboard](Dashboard1.jpg)
+
+### User-Level Monitoring
 ![Dashboard](Dashboard2.jpg)
+
+### User-Level Monitoring
 ![Dashboard](Dashboard3.jpg)
 
 ---
