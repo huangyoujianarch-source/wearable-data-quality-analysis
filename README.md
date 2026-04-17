@@ -1,96 +1,95 @@
-# 📊 Data Quality Analysis of Healthcare Wearable Devices
+# Wearable Device Data Quality Dashboard
 
-## 🧩 Project Overview
-This project analyzes data quality issues in a healthcare wearable device, identifying key reliability challenges and providing actionable insights to improve device performance and user experience.
+## Overview
+This project analyzes data quality issues from wearable devices, focusing on two key dimensions:
 
----
+- Accuracy
+- Completeness
 
-## 🎯 Objectives
-- Assess data completeness and accuracy across key metrics  
-- Identify patterns of missing or inconsistent data  
-- Provide actionable insights to improve data reliability  
+The goal is to identify hidden data risks and provide both system-level and user-level insights.
 
 ---
 
-## 📦 Dataset
-The dataset contains data quality measurements across multiple health metrics, including:
-- Category and dimension information  
-- Metric names  
-- Timestamps for trend analysis  
-- Subject-related attributes  
+## Data Description
+
+The dataset contains wearable device data from 10 users across 60+ health and activity metrics over time.
+
+Each record is evaluated for data quality across two dimensions:
+- **Accuracy**: whether values are within expected ranges  
+- **Completeness**: whether required data is missing  
+
+An `issue` flag (1 = issue, 0 = valid) is used to calculate issue rates by user, metric, and time.
 
 ---
 
-## 🛠️ Tools & Technologies
-- Python (pandas)  
-- Tableau  
-- SQL (for data querying logic)
+## Problem
+
+Although overall issue rates appear low (~8%), deeper analysis reveals:
+
+- Significant accuracy issues (~38%)
+- Certain metrics consistently failing (up to 100%)
+- Data quality problems affecting all users
 
 ---
 
-## ⚙️ Methodology
-- Cleaned and processed data using Python (pandas)  
-- Defined key metric `issue_rate` to measure data quality  
-- Conducted exploratory and time-series analysis  
-- Built interactive dashboards in Tableau  
-- Collaborated with stakeholders to align analysis with business needs  
+## Dashboard Design
+
+### 1. System-Level Dashboard
+
+<img width="2404" height="1602" alt="1" src="https://github.com/user-attachments/assets/93e9eb9e-2b64-4a31-84ca-b3e58897b44d" />
+
+- Overall issue rate KPI
+- Accuracy vs Completeness comparison
+- Top failing metrics
+- Issue distribution across users
+- Time-based trends
+
+Purpose: Identify global data quality risks
 
 ---
 
-## 📊 Dashboard Design
+### 2. User-Level Dashboard
 
-These dashboards were designed to support both operational monitoring and user-level insights.
+<img width="2402" height="1604" alt="2" src="https://github.com/user-attachments/assets/1bdc3866-40e5-46cd-bd26-ed001183b27c" />
 
-### 1. Overall Device Monitoring Dashboard
-- Tracks overall data quality performance across all metrics  
-- Highlights issue rates and trends over time  
-- Helps stakeholders quickly identify system-level problems  
+- Personalized issue rate
+- Dynamic insight generation
+- Top problematic metrics per user
+- Daily issue trend
 
-### 2. User-Level Monitoring Dashboard
-- Provides an overview of data quality for individual users  
-- Allows users to understand their overall recording performance  
-
-### 3. Metric-Specific Monitoring Dashboard
-- Focuses on specific health metrics (e.g., heart rate, movement, sleep)  
-- Enables detailed investigation of data quality issues  
-- Helps identify patterns and potential causes of anomalies  
+Purpose: Help users understand and improve their own data quality
 
 ---
 
-## 🔍 Key Insights
-- Most metrics show high reliability with near-zero issue rates  
-- Movement-related metrics have higher issue rates, likely due to sensor or activity factors  
-- Sleep and readiness metrics show higher missing rates  
-- Heart rate metrics contain anomalies that may indicate measurement inconsistencies  
+## Tools Used
+
+- Python (data processing)
+- Pandas (data transformation)
+- Tableau (dashboard design)
 
 ---
 
-## 🚀 Business Recommendations
-- Improve movement tracking accuracy during active conditions  
-- Enhance data collection for sleep-related metrics  
-- Investigate heart rate anomalies for better reliability  
-- Use dashboards for continuous monitoring and improvement  
+## 💡 Key Insights
+
+- Overall issue rate (~8%) can be misleading
+- Accuracy issues are the dominant problem
+- Missing activity-related metrics drive most failures
+- Data issues are consistent across users (system-level issue)
 
 ---
 
-## 📊 Dashboard Preview
-### Overall Device Monitoring
-![Dashboard](Dashboard1.jpg)
+## Value
 
-### User-Level Monitoring
-![Dashboard](Dashboard2.jpg)
+This project demonstrates:
 
-### User-Level Monitoring
-![Dashboard](Dashboard3.jpg)
-
----
-
-## 💡 Key Takeaway
-This project demonstrates how data analysis can identify quality issues in healthcare devices and support data-driven product improvements.
+- Data quality analysis
+- Dashboard storytelling
+- UX thinking in data products
+- Personalized analytics design
 
 ---
 
-## 📈 What I Learned
-- Importance of data quality in real-world healthcare applications  
-- How to define meaningful metrics (e.g., issue_rate)  
-- Translating analysis into actionable business recommendations 
+
+
+
+
